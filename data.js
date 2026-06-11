@@ -10,30 +10,40 @@ const portfolioData = {
   resume: "student-resume.pdf",
   contactText: "Feel free to reach out for project collaborations, internship inquiries, or just to connect.",
 
-  projects: [
-    {
-      title: "Sallen-Key Bandpass Filter",
-      description: "Bandpass Sallen-Key circuit tuned to pass 17 kHz frequencies, combined with a peak detector and comparator. Verified with frequency response analysis showing -0.23 dB at 17.21 kHz.",
-      image: "IMG_7612.jpg",
-      details: ["IMG_7530.jpg", "IMG_7614.jpg"],
-      repo: "https://github.com/MwauraJames197"
-    },
-    {
-      title: "Gravity Light Monitoring System",
-      description: "Arduino Nano R4 system that measures voltage, current, and power using INA219 sensors and displays live data on an OLED screen.",
-      image: "gravity-light.jpg",
-      details: [],
-      repo: ""
-    },
-    {
-      title: "Pico W RC Fire Truck",
-      description: "Robotic RC fire truck controlled using a PS4 controller and Raspberry Pi Pico W, with motor control and sensor testing.",
-      image: "firetruck.jpg",
-      details: [],
-      repo: ""
-    }
-  ],
-
+projects: [
+  {
+    title: "Sallen-Key Bandpass Filter",
+    tag: "Circuit Design",
+    description: "Designed and tested a Sallen-Key bandpass filter tuned around 17 kHz. The project included breadboarding, frequency response testing, peak detection, and comparator behavior verification.",
+    image: "IMG_7612.jpg",
+    details: ["IMG_7530.jpg", "IMG_7614.jpg"],
+    github: "#"
+  },
+  {
+    title: "Gravity Light Power Monitoring System",
+    tag: "Embedded Systems",
+    description: "Built the monitoring subsystem for a gravity-powered light project using an Arduino Nano R4, OLED display, and INA219 sensors to measure voltage, current, power, and estimated runtime.",
+    image: "gravity-light.jpg",
+    details: ["gravity-light-1.jpg", "gravity-light-2.jpg"],
+    github: "#"
+  },
+  {
+    title: "Pico RC Fire Truck",
+    tag: "Robotics",
+    description: "Developed an RC fire truck system using a Raspberry Pi Pico W, motor control, servos, ultrasonic sensing, and wireless controller input for movement and obstacle detection.",
+    image: "pico-firetruck.jpg",
+    details: ["firetruck-1.jpg", "firetruck-2.jpg"],
+    github: "#"
+  },
+  {
+    title: "Power PCB Assembly",
+    tag: "PCB Design",
+    description: "Assembled and documented a custom power PCB, including component placement, soldering, board inspection, and preparation for electrical testing.",
+    image: "power-pcb.jpg",
+    details: ["pcb-1.jpg", "pcb-2.jpg"],
+    github: "#"
+  }
+],
   education: [
     {
       school: "Seattle Pacific University",
