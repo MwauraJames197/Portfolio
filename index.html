@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Mwaura — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="#about">James <span>Mwaura</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-social"></div>
+  </nav>
+
+  <section id="about">
+    <div class="hero-text">
+      <p class="hero-eyebrow" id="heroEyebrow"></p>
+      <h1 class="hero-name" id="heroName"></h1>
+      <p class="hero-bio" id="heroBio"></p>
+      <div class="hero-contact" id="heroButtons"></div>
+    </div>
+    <div class="hero-portrait-wrap">
+      <img id="profilePhoto" class="hero-portrait" src="student-portrait.png" alt="James Mwaura profile photo" />
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="section-label reveal">Selected Work</p>
+    <h2 class="section-title reveal">Projects</h2>
+    <hr class="section-divider" />
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <section id="experience">
+    <p class="section-label reveal">Background</p>
+    <h2 class="section-title reveal">Experience</h2>
+    <hr class="section-divider" />
+    <div class="exp-grid">
+      <div class="exp-block reveal">
+        <h3>Education</h3>
+        <div id="educationList"></div>
+        <h3 class="spaced-title">Employment</h3>
+        <div id="employmentList"></div>
+        <div class="resume-row" id="resumeRow"></div>
+      </div>
+      <div class="exp-block reveal">
+        <h3>Technical Skills</h3>
+        <div class="skills-list" id="skillsList"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section-label">Get In Touch</p>
+    <h2 class="section-title">Contact</h2>
+    <p class="contact-text" id="contactText"></p>
+    <div class="contact-links" id="contactLinks"></div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <div id="lightbox" onclick="closeLightbox()">
+    <span id="lightbox-close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="Project detail" onclick="event.stopPropagation()" />
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
