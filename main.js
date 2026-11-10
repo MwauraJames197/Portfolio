@@ -87,7 +87,7 @@ const observer = new IntersectionObserver(entries => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
       if (entry.target.classList.contains("section-title")) entry.target.classList.add("animate");
-      observer.unobserve(entry);
+      observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.15 });
