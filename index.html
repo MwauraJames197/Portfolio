@@ -21,7 +21,6 @@
     </ul>
     <div class="nav-social"></div>
   </nav>
-
   <section id="about">
     <div class="hero-text">
       <p class="hero-eyebrow" id="heroEyebrow"></p>
@@ -33,14 +32,12 @@
       <img id="profilePhoto" class="hero-portrait" src="student-portrait.png" alt="James Mwaura profile photo" />
     </div>
   </section>
-
   <section id="projects">
     <p class="section-label reveal">Selected Work</p>
     <h2 class="section-title reveal">Projects</h2>
     <hr class="section-divider" />
     <div class="projects-grid" id="projectsGrid"></div>
   </section>
-
   <section id="experience">
     <p class="section-label reveal">Background</p>
     <h2 class="section-title reveal">Experience</h2>
@@ -49,6 +46,8 @@
       <div class="exp-block reveal">
         <h3>Education</h3>
         <div id="educationList"></div>
+        <h3 class="spaced-title">Certifications</h3>
+        <div id="certificationsList"></div>
         <h3 class="spaced-title">Employment</h3>
         <div id="employmentList"></div>
         <div class="resume-row" id="resumeRow"></div>
@@ -59,21 +58,17 @@
       </div>
     </div>
   </section>
-
   <section id="contact">
     <p class="section-label">Get In Touch</p>
     <h2 class="section-title">Contact</h2>
     <p class="contact-text" id="contactText"></p>
     <div class="contact-links" id="contactLinks"></div>
   </section>
-
   <footer id="footer"></footer>
-
   <div id="lightbox" onclick="closeLightbox()">
     <span id="lightbox-close" onclick="closeLightbox()">×</span>
     <img id="lightbox-img" src="" alt="Project detail" onclick="event.stopPropagation()" />
   </div>
-
   <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
